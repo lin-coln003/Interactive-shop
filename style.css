@@ -26,6 +26,7 @@ h1{
 #items-box{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .card{
@@ -36,6 +37,11 @@ h1{
    width: 200px;
    gap: 5px;
    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 0px 5px cyan;
+    cursor: pointer;
+
 }
 .card h2{
     color: green;
@@ -120,4 +126,65 @@ form input:focus{
     font-size: 14px;
     cursor: pointer;
     vertical-align: middle;
+}
+.editBtn{
+    display: block;
+    flex-direction: column;
+    color:white;
+    background-color: black;
+    border: 1px solid blue;
+    border-radius: 10px;
+    
+    width: 50px;
+    height: 25px;
+
+}
+.editBtn:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.saveBtn{
+    background-color: black;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    height: 25px;
+    width: 50px;
+
+}
+.saveBtn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.cancelBtn{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 25px;
+    width: 50px;
+    
+}
+.cancelBtn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.btnContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.card.error{
+    border-color: red;
+    
+}
+.card.error:hover{
+    box-shadow: 0 0 6px red;
+}
+.input-error{
+    border-color:  red;
+}
+.input-error:hover{
+    border-color: red;
+    box-shadow: 0 0 6px red;
 }
